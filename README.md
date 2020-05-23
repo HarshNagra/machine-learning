@@ -1,4 +1,4 @@
-# machine-learning
+# Machine Learning Algortihms
  Implementation of Machine Learning algorithms using MatLab.
 
 ### Algorithms Implemented -
