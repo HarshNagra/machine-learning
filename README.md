@@ -6,3 +6,7 @@
 1. Linear Regression 
 
 2. Logistic Regression 
+
+3. Multi-class Classification and Neural Networks
+- To recognize hand written digits. 
+

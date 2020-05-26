@@ -32,8 +32,10 @@ X = [ones(m, 1) X];
 
 
 
-
-
+[max_value, p] = max(sigmoid(X * all_theta'), [], 2);
+% Will return the value in each row which is the maximum therefore
+% suggesting which classifer it belongs to and sigmoid will give 1 or 0
+% baseed on belonging or not
 
 
 % =========================================================================
