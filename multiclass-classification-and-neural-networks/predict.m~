@@ -26,9 +26,7 @@ h = sigmoid([ones(m, 1) sigmoid([ones(m, 1) X] * Theta1')] * Theta2');
 
 [max_value, p] = max(h, [], 2);
 % suppose 1 is the given number
-% it will tell finally that the probably of the given number is 1, 2, 3 ,
-% 4, 5, 6, 7, 8, 9.. and these probablities will make sense, 1 having most
-% probably
+% it will tell finally that the probably of the given number is 1, 2, 3 , 4
 
 
 % =========================================================================
