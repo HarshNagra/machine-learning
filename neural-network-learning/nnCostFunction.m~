@@ -106,15 +106,15 @@ for t = 1:m
     delta2_accumulated = delta2_accumulated + delta3'*a2;
 end;
 
-Theta1_grad = delta1_accumulated/m;
-Theta2_grad = delta2_accumulated/m;
+Theta1_gradeint = delta1_accumulated/m;
+Theta2_gradeint = delta2_accumulated/m;
 
 
 % Part 3
 
-Theta1_grad(:, 2:input_layer_size+1) = ...
-    Theta1_grad(:, 2:input_layer_size+1) + lambda/m * Theta1(:, 2:input_layer_size+1);
-Theta2_grad(:, 2:hidden_layer_size+1) = ...
+Theta1_gradeint(:, 2:input_layer_size+1) = ...
+    Theta1_gradien(:, 2:input_layer_size+1) + lambda/m * Theta1(:, 2:input_layer_size+1);
+Theta2_gradeint(:, 2:hidden_layer_size+1) = ...
     Theta2_grad(:, 2:hidden_layer_size+1) + lambda/m * Theta2(:, 2:hidden_layer_size+1);
 % -------------------------------------------------------------
 
