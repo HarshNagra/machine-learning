@@ -18,18 +18,14 @@ grad = zeros(size(theta));
 %
 %               You should set J to the cost and grad to the gradient.
 %
+J = 1/(2*m) * sum(((X*theta) - y).^2);
+thetaNew = [0; theta(2: length(theta))];
+J = J + lambda/(2*m)*sum(thetaNew.^2); %regularized
 
-
-
-
-
-
-
-
-
-
-
-
+for i = 1:length(grad)
+    grad(i) = 1/m * sum(((X * theta ) - y) .* X(:, i)) + ((lambda/m) * thetaNew(i)); 
+    %Gradient in respect to all Thetas after differentiation
+end
 % =========================================================================
 
 grad = grad(:);
