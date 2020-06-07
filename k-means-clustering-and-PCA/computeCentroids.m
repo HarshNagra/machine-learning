@@ -28,8 +28,10 @@ centroids = zeros(K, n);
 
 
 
-
-
+for k = 1:K
+    x_k = find(idx == k); % returns the linear indices corresponding to the nonzero entries of the array X
+    centroids(k, :) = sum(X(x_k, :), 1)/length(x_k);
+end
 
 
 
