@@ -57,9 +57,7 @@ for j = 1:num_users
     idx = find(R(:,j) == 1);
     x_temp = X(idx, :);
     y_temp = Y(idx, j);
-    Theta_grad(j, :) = ((Theta(j, :) * x_temp') - y_temp') ...
-        * x_temp + lambda*Theta(j,:);
-end
+    Theta_grad(j, :) = ((Theta(j, :) * x_temp') - y_temp
 
 
 % =============================================================
